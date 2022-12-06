@@ -11,7 +11,9 @@ C'est ainsi que nous partageons le travail, enregistrer les modifications apport
 1. [Git](https://git-scm.com/book/fr/v2)
    1. [Démarrage rapide](https://git-scm.com/book/fr/v2/D%C3%A9marrage-rapide-%C3%80-propos-de-la-gestion-de-version)
    2. [Installation](https://git-scm.com/book/fr/v2/D%C3%A9marrage-rapide-Installation-de-Git)
+      1. Pour Windows, lors de l'installation de Git par le biais du programme d'installation, il est recommandé de sélectionner l'option *Use Git from Windows Command Prompt*
    3. [Parametrage](https://git-scm.com/book/fr/v2/D%C3%A9marrage-rapide-Param%C3%A9trage-%C3%A0-la-premi%C3%A8re-utilisation-de-Git)
+
    
 *Une fois que vous avez installé git, créez un compte sur GitHub.*
 
@@ -27,7 +29,56 @@ Un environnement virtuel est un outil pour garder les dépendances requises par 
 
 Ceci conclut l'installation des outils de base. Toute méthode ou module dont nous avons besoin pour accomplir une tâche de programmation est inclus dans Anaconda.
 
+## Faites une copie de ce dépôt (git clone)
 
-   
+C'est ainsi que vous obtenez la version actuelle du projet sur votre ordinateur. Elle comprend toutes les données et les spécifications des modules nécessaires à l'exécution du notebook dans ce repo.
+
+### Cloner un dépôt existant [ref](https://git-scm.com/book/fr/v2/Les-bases-de-Git-D%C3%A9marrer-un-d%C3%A9p%C3%B4t-Git) 
 
 
+
+Créez un dossier appelé simple_projects. Ce dossier doit se trouver sous le répertoire principal de l'utilisateur. Dans Windows, cela ressemble à ceci :
+
+```bash
+C:/Users/user/simple_project
+```
+
+En utilisant le Windows Power Shell, naviguez dans le répertoire simple_project nouvellement créé :
+
+```bash
+cd C:/Users/user/simple_project
+```
+
+Clonez (faites une copie) de ce projet dans le répertoire simple_project :
+
+```bash
+git clone https://github.com/hammerdirt-dev/bienvenue
+```
+
+Ceci crée un répertoire nommé bienvenue, initialise un répertoire .git à l’intérieur, récupère toutes les données de ce dépôt, et extrait une copie de travail de la dernière version. Si vous examinez le nouveau répertoire bienvenue, vous y verrez les fichiers du projet, prêts à être modifiés ou utilisés.
+
+## Utiliser l'environnement virtuel spécifié dans ce dépôt
+
+Dans ce dépôt, il y a un fichier appelé environment.yml. Il contient les outils nécessaires pour exécuter le code dans cet environnement. Si vous êtes sous Windows, utilisez l'invite Anaconda et naviguez jusqu'au:
+```bash
+cd C:/Users/user/simple_project
+```
+Maintenant, créez et activez le nouvel environnement avec la commande suivante:
+```bash
+conda env create -f environment.yml
+conda activate bienvenue
+conda env list
+```
+Cela produira une liste de tous les paquets et modules qui sont nécessaires (et installés) pour travailler dans ce simple projet.
+
+## Using jupyter [ref](https://jupyter.org/)
+Jupyter est le moyen et l'endroit où nous développons des modèles, faisons de l'exploration de données et créons des documents finis. Maintenant que tout est installé et que l'environnement virtuel est activé, tapez simplement (à partir de Anaconda Prompt) :
+
+```bash
+jupyter lab
+```
+Cela devrait lancer un navigateur web et l'interface jupyter.
+
+### Success
+
+[a picture of the note book](/images/success.png?raw=true "Success")
