@@ -1,7 +1,7 @@
 # Bienvenue
 Guide pour faire avancer les choses. 
 
-Il s'agit d'un dépôt de test pour initier les collborateurs à l'utilisation de git et conda. Il est donc préférable de se familiariser ET INSTALLER l'ensemble d'outils permettant de faire de la science des données et de collaborer à des projets de programmation.Cela peut se résumer en deux étapes :
+Il s'agit d'un dépôt de test pour initier les collborateurs à l'utilisation de git et conda. Il est donc préférable de se familiariser ET INSTALLER l'ensemble d'outils permettant de faire de la science des données et de collaborer à des projets de programmation. Cela peut se résumer en deux étapes :
 1. Le contrôle de version
 2. Environnements virtuels
 
