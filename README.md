@@ -81,4 +81,4 @@ Cela devrait lancer un navigateur web et l'interface jupyter.
 
 ### Success
 
-[a picture of the note book](/images/success.png?raw=true "Success")
+![a picture of the note book](images/success.png)
