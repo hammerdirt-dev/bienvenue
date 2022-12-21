@@ -35,8 +35,6 @@ C'est ainsi que vous obtenez la version actuelle du projet sur votre ordinateur.
 
 ### Cloner un dépôt existant [ref](https://git-scm.com/book/fr/v2/Les-bases-de-Git-D%C3%A9marrer-un-d%C3%A9p%C3%B4t-Git) 
 
-
-
 Créez un dossier appelé simple_projects. Ce dossier doit se trouver sous le répertoire principal de l'utilisateur. Dans Windows, cela ressemble à ceci :
 
 ```bash
@@ -57,7 +55,7 @@ git clone https://github.com/hammerdirt-dev/bienvenue
 
 Ceci crée un répertoire nommé bienvenue, initialise un répertoire .git à l’intérieur, récupère toutes les données de ce dépôt, et extrait une copie de travail de la dernière version. Si vous examinez le nouveau répertoire bienvenue, vous y verrez les fichiers du projet, prêts à être modifiés ou utilisés.
 
-## Utiliser l'environnement virtuel spécifié dans ce dépôt
+## Utiliser l'environnement virtuel spécifié dans ce dépôt [ref](https://conda.io/projects/conda/en/latest/user-guide/tasks/manage-environments.html#sharing-an-environment)
 
 Dans ce dépôt, il y a un fichier appelé environment.yml. Il contient les outils nécessaires pour exécuter le code dans cet environnement. Si vous êtes sous Windows, utilisez l'invite Anaconda et naviguez jusqu'au:
 ```bash
@@ -70,6 +68,8 @@ conda activate bienvenue
 conda env list
 ```
 Cela produira une liste de tous les paquets et modules qui sont nécessaires (et installés) pour travailler dans ce simple projet.
+
+:crossed_fingers: :+1: Le fichier environment.yml a été récemment modifié en une version non spécifique à la plate-forme. Cela devrait fonctionner sous Windows, Mac et Linux.
 
 ## Using jupyter [ref](https://jupyter.org/)
 Jupyter est le moyen et l'endroit où nous développons des modèles, faisons de l'exploration de données et créons des documents finis. Maintenant que tout est installé et que l'environnement virtuel est activé, tapez simplement (à partir de Anaconda Prompt) :
